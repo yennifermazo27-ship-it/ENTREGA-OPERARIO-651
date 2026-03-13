@@ -35,12 +35,15 @@ public class ModeloDatos {
 		}return operaTemporal;
 			}
 		
-		public void consultarOperarioLista() {
-			
-			System.out.println("LISTA OPERARIOS");
-			System.out.println();
-			System.out.println(mapaOperarios);
-			
+		public String consultarOperarioLista() {
+
+		    String lista = "LISTA OPERARIOS\n\n";
+
+		    for(Operario op : mapaOperarios.values()) {
+		        lista += op + "\n";
+		    }
+
+		    return lista;
 		}
 		
 		public void actualizarOperario() {
