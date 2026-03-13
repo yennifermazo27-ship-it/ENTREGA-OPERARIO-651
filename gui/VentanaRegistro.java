@@ -214,7 +214,7 @@ private void registrarOperario() {
 	
 	System.out.println("Despues: "+miOperario);
 	
-	lblResSueldoN.setText(miOperario.getSueldoNuevo()+"");  // ""Transforma un Double en texto
+	lblResSueldoN.setText(miOperario.getSueldoNuevo()+"");  
 	lblPorAumentoFin.setText(miOperario.getAumento()+"");
 	
 	String resp=miModelo.registrarOperario(miOperario);
@@ -236,6 +236,7 @@ private void limpiar() {
 	lblResSueldoN.setText("");
 	
 }
+
 
 
 
